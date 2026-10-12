@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-label="PDFSort Android placeholder screenshot 1">
+<rect width="600" height="1300" fill="#14171a"/>
+<rect x="24" y="24" width="552" height="1252" rx="40" fill="#1B1E21" stroke="#34383C" stroke-width="3"/>
+<circle cx="300" cy="52" r="10" fill="#34383C"/>
+<rect x="24" y="90" width="552" height="110" fill="#23272b"/>
+<text x="64" y="160" font-family="system-ui,sans-serif" font-size="36" font-weight="700" fill="#F3F3F1">PDFSort</text>
+<circle cx="512" cy="145" r="24" fill="#34383C"/>
+<g font-family="system-ui,sans-serif" font-size="28" fill="#F3F3F1">
+<rect x="48" y="240" width="504" height="120" rx="16" fill="#23272b" stroke="#34383C" stroke-width="2"/><text x="90" y="295">Bank statement.pdf</text><text x="90" y="333" font-size="24" fill="#B9BDC2">Finance · 2.1 MB</text>
+<rect x="48" y="380" width="504" height="120" rx="16" fill="#23272b" stroke="#34383C" stroke-width="2"/><text x="90" y="435">Contract_2025.pdf</text><text x="90" y="473" font-size="24" fill="#B9BDC2">Legal · 0.8 MB</text>
+<rect x="48" y="520" width="504" height="120" rx="16" fill="#23272b" stroke="#C56A30" stroke-width="3"/><text x="90" y="575">Scan_0041.pdf</text><text x="90" y="613" font-size="24" fill="#E8A06A">Needs review · OCR</text>
+<rect x="48" y="660" width="504" height="120" rx="16" fill="#23272b" stroke="#34383C" stroke-width="2"/><text x="90" y="715">Invoice-118.pdf</text><text x="90" y="753" font-size="24" fill="#B9BDC2">Work · 0.3 MB</text>
+</g>
+<circle cx="484" cy="1120" r="56" fill="#A95424"/>
+<text x="484" y="1140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="56" font-weight="700" fill="#F3F3F1">+</text>
+<rect x="48" y="1200" width="504" height="48" rx="24" fill="#23272b"/>
+<text x="300" y="1234" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" fill="#B9BDC2">Library · Add · Settings</text>
+</svg>

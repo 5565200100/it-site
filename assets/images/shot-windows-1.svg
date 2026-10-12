@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="PDFSort Windows placeholder screenshot 1">
+<rect width="1280" height="800" fill="#14171a"/>
+<rect x="40" y="40" width="1200" height="720" rx="16" fill="#1B1E21" stroke="#34383C" stroke-width="3"/>
+<rect x="40" y="40" width="1200" height="64" rx="16" fill="#23272b"/>
+<rect x="40" y="88" width="1200" height="16" fill="#23272b"/>
+<circle cx="90" cy="72" r="10" fill="#A95424"/><circle cx="120" cy="72" r="10" fill="#34383C"/><circle cx="150" cy="72" r="10" fill="#34383C"/>
+<text x="640" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" fill="#B9BDC2">PDFSort — MyPDF Library</text>
+<rect x="40" y="104" width="280" height="656" fill="#171a1d"/>
+<g font-family="system-ui,sans-serif" font-size="24" fill="#B9BDC2">
+<text x="80" y="170" font-weight="700" fill="#F3F3F1">Library</text>
+<text x="80" y="225">Finance</text><text x="80" y="275">Legal</text><text x="80" y="325">Medical</text><text x="80" y="375">Work</text><text x="80" y="425">Books</text>
+<text x="80" y="490" fill="#E8A06A">Needs review (3)</text>
+</g>
+<g font-family="system-ui,sans-serif">
+<rect x="360" y="150" width="330" height="220" rx="14" fill="#23272b" stroke="#C56A30" stroke-width="3"/><text x="525" y="240" text-anchor="middle" font-size="26" fill="#F3F3F1">Finance</text><text x="525" y="280" text-anchor="middle" font-size="24" fill="#B9BDC2">24 documents</text>
+<rect x="720" y="150" width="330" height="220" rx="14" fill="#23272b" stroke="#34383C" stroke-width="2"/><text x="885" y="240" text-anchor="middle" font-size="26" fill="#F3F3F1">Legal</text><text x="885" y="280" text-anchor="middle" font-size="24" fill="#B9BDC2">11 documents</text>
+<rect x="360" y="400" width="330" height="220" rx="14" fill="#23272b" stroke="#34383C" stroke-width="2"/><text x="525" y="490" text-anchor="middle" font-size="26" fill="#F3F3F1">Medical</text><text x="525" y="530" text-anchor="middle" font-size="24" fill="#B9BDC2">8 documents</text>
+<rect x="720" y="400" width="330" height="220" rx="14" fill="#23272b" stroke="#34383C" stroke-width="2"/><text x="885" y="490" text-anchor="middle" font-size="26" fill="#F3F3F1">Books</text><text x="885" y="530" text-anchor="middle" font-size="24" fill="#B9BDC2">32 documents</text>
+</g>
+<rect x="360" y="660" width="690" height="60" rx="12" fill="#A95424"/>
+<text x="705" y="700" text-anchor="middle" font-family="system-ui,sans-serif" font-size="26" font-weight="700" fill="#F3F3F1">+ Import PDFs</text>
+</svg>
