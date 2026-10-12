@@ -4,7 +4,7 @@
    (App Store / Google Play / Windows) и какие скриншоты показать.
    shots — скриншоты [{src, alt}], отображаются над кнопкой.
    Скриншоты лежат в assets/images/*.jpeg.
-   Ссылки показываются только если URL начинается с https:// */
+   Ссылки принимают внешние https://-адреса и локальные файлы из assets/documents/. */
 window.APPS = [
   {name:{ru:'',en:'',de:''}, short:'iOS', kind:'ios', platforms:["iPhone","iPad"], version:"", date:"", releasesUrl:"", storeUrl:"https://apps.apple.com/us/app/pdfsort/id6811080922", downloadUrls:{},
    shots:[{src:'assets/images/1.jpeg',alt:{ru:'PDFSort для iOS: добавление документов',en:'PDFSort for iOS: adding documents',de:'PDFSort für iOS: Dokumente hinzufügen'}},{src:'assets/images/2.jpeg',alt:{ru:'PDFSort для iOS: библиотека документов',en:'PDFSort for iOS: document library',de:'PDFSort für iOS: Dokumentenbibliothek'}},{src:'assets/images/3.jpeg',alt:{ru:'PDFSort для iOS: категории документов',en:'PDFSort for iOS: document categories',de:'PDFSort für iOS: Dokumentenkategorien'}},{src:'assets/images/4.jpeg',alt:{ru:'PDFSort для iOS: настройки',en:'PDFSort for iOS: settings',de:'PDFSort für iOS: Einstellungen'}}],
@@ -49,8 +49,8 @@ window.APPS = [
    tag:{ru:'',en:'',de:''},
    desc:{ru:'Версия PDFSort для macOS автоматически сканирует папки, анализирует PDF-файлы и раскладывает их по категориям и подкатегориям.',en:'The macOS version of PDFSort scans folders, analyzes PDF files and automatically files them into categories and subcategories.',de:'Die macOS-Version von PDFSort scannt Ordner, analysiert PDF-Dateien und sortiert sie automatisch in Kategorien und Unterkategorien ein.'},
    feat:{ru:[],en:[],de:[]}},
-  {name:{ru:'',en:'',de:''}, short:'Windows', kind:'windows', platforms:["Windows"], version:"", date:"", releasesUrl:"", storeUrl:"", downloadUrls:{windows:""},
-   shots:[{src:'assets/images/shot-windows-1.svg',alt:{ru:'PDFSort для Windows: библиотека MyPDF',en:'PDFSort for Windows: MyPDF library',de:'PDFSort für Windows: MyPDF-Bibliothek'}},{src:'assets/images/shot-windows-2.svg',alt:{ru:'PDFSort для Windows: поиск по документам',en:'PDFSort for Windows: document search',de:'PDFSort für Windows: Dokumentensuche'}}],
+  {name:{ru:'',en:'',de:''}, short:'Windows', kind:'windows', platforms:["Windows"], version:"", date:"", releasesUrl:"", storeUrl:"", downloadUrls:{windows:"assets/documents/setup.exe"},
+   shots:[{src:'assets/images/windows1.png',alt:{ru:'PDFSort для Windows: библиотека MyPDF',en:'PDFSort for Windows: MyPDF library',de:'PDFSort für Windows: MyPDF-Bibliothek'}},{src:'assets/images/windows2.png',alt:{ru:'PDFSort для Windows: поиск по документам',en:'PDFSort for Windows: document search',de:'PDFSort für Windows: Dokumentensuche'}}],
    tag:{ru:'',en:'',de:''},
    desc:{ru:'Сканирование папки или всего диска (умное сканирование находит PDF по всему компьютеру), локальная классификация по ключевым словам и через AI-провайдеров. Библиотека MyPDF/<Категория>/<Подкатегория> с 9 системными категориями и около 55 подкатегорий, поиск по имени файла и содержимому: полный текст, для скан-копий — OCR.',en:'Scan a folder or the whole disk (smart scanning finds PDFs across your computer), local keyword classification and optional AI providers. A MyPDF/<Category>/<Subcategory> library with 9 system categories and about 55 subcategories, search by file name and content: full text, with OCR fallback for scans.',de:'Ordner oder das ganze Laufwerk scannen (Smart Scan findet PDFs auf dem gesamten Computer), lokale Stichwortklassifizierung und optionale KI-Anbieter. Eine MyPDF/<Kategorie>/<Unterkategorie>-Bibliothek mit 9 Systemkategorien und rund 55 Unterkategorien, Suche nach Dateiname und Inhalt: Volltext, für Scans OCR.'},
    feat:{ru:[
@@ -70,7 +70,7 @@ window.APPS = [
     'Dunkles und helles Design; Oberflächensprachen: Russisch, Englisch, Deutsch, Spanisch'
    ]}},
   {name:{ru:'',en:'',de:''}, short:'Android', kind:'android', platforms:["Android"], version:"", date:"", releasesUrl:"", storeUrl:"", downloadUrls:{android:""},
-   shots:[{src:'assets/images/shot-android-1.svg',alt:{ru:'PDFSort для Android: список документов',en:'PDFSort for Android: document list',de:'PDFSort für Android: Dokumentenliste'}},{src:'assets/images/shot-android-2.svg',alt:{ru:'PDFSort для Android: импорт PDF',en:'PDFSort for Android: PDF import',de:'PDFSort für Android: PDF-Import'}}],
+   shots:[{src:'assets/images/android1.png',alt:{ru:'PDFSort для Android: добавление PDF-файлов',en:'PDFSort for Android: adding PDF files',de:'PDFSort für Android: PDF-Dateien hinzufügen'}},{src:'assets/images/android2.png',alt:{ru:'PDFSort для Android: библиотека документов',en:'PDFSort for Android: document library',de:'PDFSort für Android: Dokumentenbibliothek'}},{src:'assets/images/android3.png',alt:{ru:'PDFSort для Android: файлы в категории Finance',en:'PDFSort for Android: files in the Finance category',de:'PDFSort für Android: Dateien in der Kategorie Finanzen'}},{src:'assets/images/android4.png',alt:{ru:'PDFSort для Android: настройки',en:'PDFSort for Android: settings',de:'PDFSort für Android: Einstellungen'}}],
    tag:{ru:'',en:'',de:''},
    desc:{ru:'Импорт PDF через системный выбор файлов и меню «Поделиться», локальная классификация по ключевым словам с пометкой для проверки, тёмная, светлая и системная темы. Локальная библиотека вместо iCloud; по желанию подключаются AI-провайдеры.',en:'PDF import via the system file picker and the Share menu, local keyword classification with a review flag, dark, light and system themes. A local library instead of iCloud, with optional AI providers.',de:'PDF-Import über die Systemdateiauswahl und das Teilen-Menü, lokale Stichwortklassifizierung mit Prüfmarkierung, dunkles, helles und System-Design. Lokale Bibliothek statt iCloud; optional können KI-Anbieter angebunden werden.'},
    feat:{ru:[
@@ -91,7 +91,7 @@ window.APPS = [
    ]}}
 ];
 (() => {
-  const ok = u => typeof u === "string" && /^https:\/\//i.test(u);
+  const ok = u => typeof u === "string" && (/^https:\/\//i.test(u) || /^assets\/documents\//i.test(u));
   const mk = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
   const tr = (lang, v) => typeof v === "string" ? v : (v && (v[lang] || v.en)) || "";
   window.pageRender = (lang, t) => {
@@ -127,7 +127,7 @@ window.APPS = [
       if (dl.children.length) c.append(dl);
       /* Одна кнопка платформы: App Store / Mac App Store / Google Play / Windows — под галереей */
       const act = mk("div", "actions");
-      const showOne = (u, k, cls) => { if (!ok(u)) return false; const l = mk("a", "btn " + cls, t(k)); l.href = u; l.target = "_blank"; l.rel = "noopener noreferrer"; act.append(l); return true; };
+      const showOne = (u, k, cls) => { if (!ok(u)) return false; const l = mk("a", "btn " + cls, t(k)); l.href = u; if (/^assets\/documents\//i.test(u)) l.download = ""; else { l.target = "_blank"; l.rel = "noopener noreferrer"; } act.append(l); return true; };
       const du = a.downloadUrls || {};
       const isIos = a.kind === "ios", isAnd = a.kind === "android", isWin = a.kind === "windows", isMac = a.kind === "mac";
       const shown = (isIos && showOne(a.storeUrl, "dl.store", "")) || (isAnd && showOne(a.storeUrl || du.android, "dl.play", "")) || (isWin && showOne(du.windows, "dl.win", "")) || (isMac && showOne(a.storeUrl, "dl.store", "")) || (isIos && showOne(a.releasesUrl, "dl.release", "")) || (isAnd && showOne(a.releasesUrl, "dl.release", "")) || (isWin && showOne(a.releasesUrl, "dl.release", "")) || (isMac && showOne(a.releasesUrl, "dl.release", ""));
