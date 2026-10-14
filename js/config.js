@@ -7,5 +7,5 @@ window.SITE = {
   email: "igoengler@gmail.com",
   /* Google Analytics 4: вставьте свой Measurement ID (формат G-XXXXXXXXXX).
      Оставьте пустым "", чтобы аналитика была отключена. */
-  gaId: "G-VH1CBL6NG8"
+  gaId: "G-3LRC0QH9TN"
 };
