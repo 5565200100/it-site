@@ -19,7 +19,7 @@
 
   function services() {
     const box = D.getElementById("svc-list"); if (!box) return; box.replaceChildren();
-    const order = [8, 1, 2, 3, 4, 5, 6, 7];
+    const order = [8, 1, 2, 4, 5, 6, 7];
     order.forEach((i, pos) => {
       const a = mk("article", "card service-card" + (pos === 0 ? " wide featured" : "")), ul = mk("ul");
       a.dataset.number = String(pos + 1).padStart(2, "0");
