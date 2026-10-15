@@ -18,16 +18,6 @@
   const S = window.SITE || {}, ok = u => typeof u === "string" && /^https:\/\//i.test(u);
 
   function services() {
-    const pg = D.getElementById("principles-grid");
-    if (pg) {
-      pg.replaceChildren();
-      const items = t("bi.tech");
-      (Array.isArray(items) ? items : []).forEach(x => {
-        const d = mk("article", "tcard");
-        d.append(mk("h3", "sub", x.h), mk("p", "", x.d));
-        pg.append(d);
-      });
-    }
     const box = D.getElementById("svc-list"); if (!box) return; box.replaceChildren();
     const order = [8, 1, 2, 3, 4, 5, 6, 7];
     order.forEach((i, pos) => {
