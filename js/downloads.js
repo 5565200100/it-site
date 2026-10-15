@@ -93,13 +93,14 @@ window.APPS = [
 (() => {
   const ok = u => typeof u === "string" && (/^https:\/\//i.test(u) || /^assets\/documents\//i.test(u));
   const mk = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+  const rich = (tag, cls, html) => { const e = mk(tag, cls); const t = document.createElement("template"); t.innerHTML = html; e.append(t.content.cloneNode(true)); return e; };
   const tr = (lang, v) => typeof v === "string" ? v : (v && (v[lang] || v.en)) || "";
   window.pageRender = (lang, t) => {
     const ab = document.getElementById("dl-about");
     if (ab) {
       ab.replaceChildren();
       const p = t("dl.about");
-      (Array.isArray(p) ? p : [p]).forEach(x => { if (x) ab.append(mk("p", "", x)); });
+      (Array.isArray(p) ? p : [p]).forEach(x => { if (x) ab.append(rich("p", "", x)); });
     }
     const box = document.getElementById("apps"); if (!box) return; box.replaceChildren();
     window.APPS.forEach(a => {
